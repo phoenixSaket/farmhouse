@@ -1,0 +1,59 @@
+.active {
+    width: inherit;
+    max-width: inherit;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px #969696;
+}
+
+.active-image {
+    height: max-content;
+}
+
+.main-container {
+    max-width: 1024px;
+    margin-top: 15px;
+}
+
+.other-images {
+    margin-top: 10px;
+    gap: 15px;
+    overflow-x: scroll;
+    padding: 10px 5px;
+}
+
+.inner-box {
+    width: 155px;
+}
+
+.thumbnail {
+    width: inherit;
+    height: auto;
+    box-shadow: 0 0 5px 2px #969696;
+}
+
+.active-thumbnail {
+    box-shadow: 0 0 5px 3px #f3f577;
+}
+
+/* width */
+.other-images::-webkit-scrollbar {
+    height: 10px;
+}
+
+/* Track */
+.other-images::-webkit-scrollbar-track {
+    background: #dfdfdf;
+    background: transparent;
+    border-radius: 10px;
+}
+
+/* Handle */
+.other-images::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.other-images::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

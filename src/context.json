@@ -1,0 +1,13 @@
+{
+    "links": [
+        "Gallery",
+        "Offers",
+        "Feedbacks",
+        "Contact Us"
+    ],
+    "landing": {
+        "top": "Welcome to Viva Farms",
+        "bottom": "YOur one stop location where the fun doesn't stop",
+        "image" : "/assets/sky.jpg"
+    }
+}

@@ -1,0 +1,11 @@
+<div class="container navbar">
+    <div class="navbar-inner d-flex justify-between align-center w-100">
+        <div class="brand">
+            <a href="#">Viva Farms</a>
+        </div>
+        <div class="links-container d-flex">
+            <a class="link" *ngFor="let link of links"
+                [href]="'#'+(link.split(' ').join('_')).toLowerCase()">{{link}}</a>
+        </div>
+    </div>
+</div>

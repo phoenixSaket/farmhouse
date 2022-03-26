@@ -1,0 +1,35 @@
+.brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* color: var(--text-color); */
+    padding-left: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0 0 2px #969696;
+}
+
+.brand:hover {
+    transform: scale(1.2);
+    transition-duration: 100ms;
+} 
+
+.links-container {
+    gap: 2rem;
+    font-size: 1rem;
+    padding-right: 20px;
+}
+
+.link, .link:focus, .link:visited, .link:hover {
+    color: black;
+    font-weight: 700;
+}
+
+.navbar-inner {
+    padding: 10px 20px;
+    position: fixed;
+    max-width: 1440px;
+    background: transparent;
+    /* background-color: var(--accent-primary); */
+    z-index: 10;
+}

@@ -1,0 +1,10 @@
+<div class="main-container w-100 d-flex column">
+    <div class="active-image w-100">
+        <img class="active" [src]="images[currentIndex]" (mouseenter)="stopNext()" (mouseleave)="startNext()">
+    </div>
+    <div class="other-images d-flex">
+        <div class="inner-box" *ngFor="let img of images; let i = index" (click)="setCurrentImage(i)">
+            <img class="thumbnail" [src]="img" [ngClass]="i == currentIndex ? 'active-thumbnail' : ''">
+        </div>
+    </div>
+</div>

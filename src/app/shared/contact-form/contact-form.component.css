@@ -1,0 +1,35 @@
+.contact-form-container {
+    width: 100%;
+    max-width: 100%;
+    min-width: 680px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px grey;
+    height: 100%;
+}
+
+.input-wrapper {
+    padding: 5px 0;
+}
+
+.btn {
+    background-color: #dd5a51;
+    padding: 10px 75px;
+    font-family: "Berseker";
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 900px) {
+    .contact-form-container {
+        width: 100%;
+        max-width: 720px;
+        min-width: 300px;
+    }
+}

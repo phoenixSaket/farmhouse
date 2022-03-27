@@ -1,1 +1,37 @@
-<p>user-card works!</p>
+<div class="card">
+    <div class="content" [id]="'color-'+color">
+        {{content}}
+    </div>
+    <svg class="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 850" version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="#ACCBEE" offset="0%"></stop>
+                <stop stop-color="#E7F0FD" offset="100%"></stop>
+            </linearGradient>
+            <linearGradient [id]="'sw-gradient-'+color" x1="0" x2="0" y1="1" y2="0">
+                <stop [attr.stop-color]="color" offset="0%"></stop>
+                <stop [attr.stop-color]="color" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path style="transform:translate(0, 0px); opacity:1"
+            [attr.fill]="setDynamicColors ? 'url(#sw-gradient-'+color+')' : 'url(#sw-gradient-0)'"
+            d="M0,206L80,163.3C160,131,320,65,480,98C640,131,750,281,870,300.9C1130,384,1280,286,1440,225.7C1600,75,1760,33,1920,72.7C2080,43,2240,65,2400,114.3C2560,163,2720,229,2880,269.5C3040,310,3200,327,3360,343C3520,359,3680,376,3840,334.8C4000,294,4160,196,4320,204.2C4480,212,4640,327,4800,343C4960,359,5120,278,5280,277.7C5440,278,5600,359,5760,375.7C5920,392,6080,343,6240,294C6400,245,6560,196,6720,196C6880,196,7040,245,7200,261.3C7360,278,7520,261,7680,212.3C7840,163,8000,82,8160,65.3C8320,49,8480,98,8640,138.8C8800,180,8960,212,9120,220.5C9280,229,9440,212,9600,236.8C9760,261,9920,327,10080,359.3C10240,392,10400,392,10560,343C10720,294,10880,196,11040,171.5C11200,147,11360,196,11440,220.5L11520,245L11520,850L11440,850C11360,850,11200,850,11040,850C10880,850,10720,850,10560,850C10400,850,10240,850,10080,850C9920,850,9760,850,9600,850C9440,850,9280,850,9120,850C8960,850,8800,850,8640,850C8480,850,8320,850,8160,850C8000,850,7840,850,7680,850C7520,850,7360,850,7200,850C7040,850,6880,850,6720,850C6560,850,6400,850,6240,850C6080,850,5920,850,5760,850C5600,850,5440,850,5280,850C5120,850,4960,850,4800,850C4640,850,4480,850,4320,850C4160,850,4000,850,3840,850C3680,850,3520,850,3360,850C3200,850,3040,850,2880,850C2720,850,2560,850,2400,850C2240,850,2080,850,1920,850C1760,850,1600,850,1440,850C1280,850,1120,850,960,850C800,850,640,850,480,850C320,850,160,850,140,850L0,850Z">
+        </path>
+    </svg>
+
+    <div class="image-container">
+        <img [src]="image" class="avatar" alt="avatar">
+    </div>
+
+    <div class="p-relative">
+        <div class="text-container w-100 column d-flex align-center" [style.top]="ownerDetails ? '-95px' : '-80px'">
+            <div class="name" [style.color]="setDynamicColors ? '#fff' : '#000'">{{name}}</div>
+            <div class="address" [style.color]="setDynamicColors ? '#fff' : '#000'">{{address}}</div>
+            <div class="owner-details d.flex column align-center text-center" *ngIf="ownerDetails">
+                <div class="email" [style.color]="setDynamicColors ? '#fff' : '#000'">{{ownerDetails.email}}</div>
+                <div class="phone" [style.color]="setDynamicColors ? '#fff' : '#000'">{{ownerDetails.phone}}</div>
+            </div>
+        </div>
+    </div>
+</div>

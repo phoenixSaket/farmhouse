@@ -1,7 +1,7 @@
 .landing-container {
     width: 100vw;
     user-select: none;
-    background-image: var(--image);
+    /* background-image: var(--image); */
     height: 100vh;
     width: 100vw;
     background-position: center;
@@ -56,6 +56,44 @@
     100% {
         opacity: 1;
         width: 100%;
+    }
+}
+
+
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.wave {
+    width: 1000px;
+    height: 1325px;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 35%;
+    background: rgba(255, 255, 255, .75);
+    animation: wave 15s infinite linear;
+}
+
+@keyframes wave {
+    from {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(360deg);
     }
 }
 

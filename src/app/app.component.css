@@ -15,3 +15,8 @@
     align-items: center;
     flex-direction: column;
 }
+
+.cards-container {
+    margin-top: 15px;
+    gap: 40px;
+}

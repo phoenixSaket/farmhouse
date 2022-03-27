@@ -1,19 +1,27 @@
 .card {
     display: flex;
     flex-direction: column;
-    margin: 10px;
     width: 100%;
     max-width: 300px;
-    box-shadow: 0 0 10px 1px gray;
+    box-shadow: 0 0 5px 1px gray;
+    --platinum: #e5e4e2;
+    --gold: #ebd662;
+    --silver: #c0c0c0;
+    --color: var(--platinum);
+    user-select: none;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition-duration: 200ms;
 }
 
 .type {
-    /* background-color: gold; */
     display: flex;
     justify-content: center;
     padding: 10px 0;
     position: relative;
-    /* transform: rotate(-30deg) translate(-100px); */
 }
 
 .triangle {
@@ -24,7 +32,7 @@
     height: 0;
     border-style: solid;
     border-width: 150px 200px 0 0;
-    border-color: lightgrey transparent transparent transparent;
+    border-color: var(--color) transparent transparent transparent;
 }
 
 .triangle-over {
@@ -40,18 +48,24 @@
 
 .text {
     position: absolute;
-    left: 35px;
-    top: -100px;
+    width: 100px;
+    left: 55px;
+    height: 100px;
+    top: -110px;
     transform: rotate(-39deg);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    font-family: 'Berseker', sans-serif;
+    letter-spacing: 5px;
 }
 
 .content {
     margin-top: 100px;
     padding: 0 35px;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
 }
 
@@ -64,8 +78,10 @@
 
 .price-inner {
     padding: 10px 50px;
-    background-color: lightgrey;
-    border-radius: 10px;
-    box-shadow: 0 0 7px 1px gray;
+    background-color: var(--color);
+    border-radius: 5px;
+    /* box-shadow: 0 0 3px 1px lightgray; */
     font-weight: 700;
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 1px;
 }

@@ -7,12 +7,34 @@
             [shouldStopAtHover]="carousel.shouldStopAtHover" [interval]="carousel.interval">
         </app-carousel>
     </div>
-    <div class="inner-container offer-cards">
+    <div class="inner-container offer-cards" id="offers">
         <app-title title="Offers"></app-title>
-        <div class="d-flex justify-around wrap">
-            <app-offer-card></app-offer-card>
-            <app-offer-card></app-offer-card>
-            <app-offer-card></app-offer-card>
+        <div class="d-flex w-100 justify-center wrap cards-container">
+            <app-offer-card *ngFor="let card of offers" [type]="card.type" [content]="card.content"
+                [price]="card.price">
+            </app-offer-card>
         </div>
     </div>
+    <div class="inner-container offer-cards" id="feedbacks">
+        <app-title title="Customer Feedbacks"></app-title>
+        <div class="d-flex w-100 justify-center wrap cards-container">
+            <app-user-card *ngFor="let feedback of feedbacks" [name]="feedback.name" [address]="feedback.address"
+                [color]="feedback.color" [image]="feedback.image" [content]="feedback.content" [setDynamicColors]=false>
+            </app-user-card>
+        </div>
+    </div>
+
+    <div class="contact-us" id="contact_us">
+        <app-title title="Contact Us"></app-title>
+        <div class="d-flex w-100 justify-center">
+            <div class="d-flex inner-container w-100 justify-between wrap cards-container">
+                <app-user-card [name]="ownerDetails.name" [address]="ownerDetails.address" [color]="ownerDetails.color"
+                    [image]="ownerDetails.image" [content]="ownerDetails.content" [setDynamicColors]=true
+                    [ownerDetails]="{email : ownerDetails.email, phone : ownerDetails.phone}"></app-user-card>
+                    <app-contact-form></app-contact-form>
+            </div>
+        </div>
+    </div>
+
+    
 </div>

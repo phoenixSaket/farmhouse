@@ -1,0 +1,91 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 0 5px 1px gray;
+    user-select: none;
+    color: #474747;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition-duration: 200ms;
+}
+
+.content {
+    padding: 10px 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--text-color-light);
+    font-family: 'Cabin';
+    font-weight: 500;
+    --color: rgb(142, 153, 201);
+}
+
+.content::before {
+    content: '"';
+    font-size: 3em;
+    font-weight: 100;
+    font-style: normal;
+    font-family: 'Secular One';
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color);
+}
+
+.content::before {
+    transform: rotate(180deg);
+}
+
+.wave {
+    margin-top: 10px;
+    z-index: 0;
+}
+
+.image-container {
+    position: relative;
+    top: -180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    outline: 5px solid white;
+    border-radius: 50%;
+    background-color: #ACCBEE;
+}
+
+.text-container {
+    position: absolute; 
+    top: -80px;
+    color: white;
+}
+
+.name {
+    font-family: "Cabin";
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.address {
+    font-family: "Cabin";
+    font-size: 0.8em;
+    padding-bottom: 3px;
+}
+
+.owner-details {
+    padding-top: 3px;
+    border-top: 2px solid white;
+    font-size: 0.7em;
+}

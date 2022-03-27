@@ -8,7 +8,7 @@
     "landing": {
         "top": "Welcome to Viva Farms",
         "bottom": "YOur one stop location where the fun doesn't stop",
-        "image" : "/assets/sky.jpg"
+        "image": "/assets/sky.jpg"
     },
     "carousel": {
         "autoplay": true,
@@ -51,6 +51,54 @@
             "/assets/Images/bg-33.png",
             "/assets/Images/bg-34.png"
         ]
+    },
+    "offers": [
+        {
+            "type": "Platinum",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa.",
+            "price": "₹5000"
+        },
+        {
+            "type": "Gold",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa.",
+            "price": "₹3000"
+        },
+        {
+            "type": "Silver",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa.",
+            "price": "₹2000"
+        }
+    ],
+    "feedbacks": [
+        {
+            "name": "Saket Verma",
+            "address": "Mumbai, Maharshtra",
+            "color": "#10AC84",
+            "image": "/assets/Avatars/avatar-1.png",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa."
+        },
+        {
+            "name": "Manish Khapre",
+            "address": "Pune, Maharshtra",
+            "color": "#629BC6",
+            "image": "/assets/Avatars/avatar-2.png",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa."
+        },
+        {
+            "name": "Yashashree Panda",
+            "address": "Anand, Gujarat",
+            "color": "#8A60B9",
+            "image": "/assets/Avatars/avatar-3.png",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa."
+        }
+    ],
+    "ownerDetails": {
+        "name": "Vaibhav Sawant",
+        "address": "Founder, Owner",
+        "color": "#DD5A51",
+        "image": "/assets/Avatars/avatar-4.png",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa.",
+        "email": "vaibhav.sawant@gmail.com",
+        "phone": "+91-9273176668"
     }
-    
 }

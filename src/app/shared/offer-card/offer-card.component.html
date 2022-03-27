@@ -1,17 +1,16 @@
-<div class="card">
+<div class="card" [id]="type.toLowerCase()">
     <div class="type">
         <div class="triangle">
-            <div class="text">Platinum</div>
+            <div class="text">{{type}}</div>
         </div>
         <div class="triangle-over"></div>
-        < </div>
-            <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum
-                dolorum ipsa
-                eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa.
-            </div>
-            <div class="price">
-                <div class="price-inner">
-                    $1500
-                </div>
-            </div>
     </div>
+    <div class="content">
+        {{content}}
+    </div>
+    <div class="price">
+        <div class="price-inner">
+            {{price}}
+        </div>
+    </div>
+</div>

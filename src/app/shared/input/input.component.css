@@ -1,0 +1,20 @@
+.label {
+    font-weight: bold;
+    padding-left: 25px;
+    font-family: "Cabin";
+    text-transform: capitalize;
+}
+
+.input {
+    background-color: #e7e7e7 ;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-family: "Cabin";
+}
+
+::placeholder {
+    font-family: "Cabin";
+    color: #777777;
+}

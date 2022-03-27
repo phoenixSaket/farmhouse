@@ -1,5 +1,5 @@
 .brand {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: 700;
     /* color: var(--text-color); */
     padding-left: 20px;
@@ -12,11 +12,11 @@
 .brand:hover {
     transform: scale(1.2);
     transition-duration: 100ms;
-} 
+}
 
 .links-container {
-    gap: 2rem;
-    font-size: 1rem;
+    gap: 2em;
+    font-size: 1em;
     padding-right: 20px;
 }
 

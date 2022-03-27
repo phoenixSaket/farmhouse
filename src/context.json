@@ -9,5 +9,48 @@
         "top": "Welcome to Viva Farms",
         "bottom": "YOur one stop location where the fun doesn't stop",
         "image" : "/assets/sky.jpg"
+    },
+    "carousel": {
+        "autoplay": true,
+        "shouldStopAtHover": true,
+        "interval": 5000,
+        "fadeDuration": 150,
+        "images": [
+            "/assets/Images/bg-1.png",
+            "/assets/Images/bg-2.png",
+            "/assets/Images/bg-3.png",
+            "/assets/Images/bg-4.png",
+            "/assets/Images/bg-5.png",
+            "/assets/Images/bg-6.png",
+            "/assets/Images/bg-7.png",
+            "/assets/Images/bg-8.png",
+            "/assets/Images/bg-9.png",
+            "/assets/Images/bg-10.png",
+            "/assets/Images/bg-11.png",
+            "/assets/Images/bg-12.png",
+            "/assets/Images/bg-13.png",
+            "/assets/Images/bg-14.png",
+            "/assets/Images/bg-15.png",
+            "/assets/Images/bg-16.png",
+            "/assets/Images/bg-17.png",
+            "/assets/Images/bg-18.png",
+            "/assets/Images/bg-19.png",
+            "/assets/Images/bg-20.png",
+            "/assets/Images/bg-21.png",
+            "/assets/Images/bg-22.png",
+            "/assets/Images/bg-23.png",
+            "/assets/Images/bg-24.png",
+            "/assets/Images/bg-25.png",
+            "/assets/Images/bg-26.png",
+            "/assets/Images/bg-27.png",
+            "/assets/Images/bg-28.png",
+            "/assets/Images/bg-29.png",
+            "/assets/Images/bg-30.png",
+            "/assets/Images/bg-31.png",
+            "/assets/Images/bg-32.png",
+            "/assets/Images/bg-33.png",
+            "/assets/Images/bg-34.png"
+        ]
     }
+    
 }

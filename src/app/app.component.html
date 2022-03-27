@@ -1,8 +1,18 @@
 <div class="app-container" id="#">
-    <app-navbar [links] = links></app-navbar>
+    <app-navbar [links]=links></app-navbar>
     <app-landing [text]="landing"></app-landing>
     <div class="w-100 d-flex align-center column inner-container" id="gallery">
         <app-title title="Gallery"></app-title>
-        <app-carousel></app-carousel>
+        <app-carousel [images]="carousel.images" [autoplay]="carousel.autoplay"
+            [shouldStopAtHover]="carousel.shouldStopAtHover" [interval]="carousel.interval">
+        </app-carousel>
+    </div>
+    <div class="inner-container offer-cards">
+        <app-title title="Offers"></app-title>
+        <div class="d-flex justify-around wrap">
+            <app-offer-card></app-offer-card>
+            <app-offer-card></app-offer-card>
+            <app-offer-card></app-offer-card>
+        </div>
     </div>
 </div>

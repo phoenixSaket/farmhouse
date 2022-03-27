@@ -11,23 +11,23 @@ export class CarouselComponent implements OnInit {
   @Input() autoplay: boolean = true;
   @Input() shouldStopAtHover: boolean = true;
   @Input() interval: number = 3000;
+  @Input() fadeDuration: number = 150;
 
   public currentIndex: number = 0;
   private width: number = screen.width;
   public goNext: boolean = true;
   private movedRight: number = 0;
+  public changeOfImage: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.images = [];
-    for (let i = 1; i <= 34; i++) {
-      this.images.push("/assets/Images/bg-" + i + ".png");
-    }
+
+    document.getElementsByClassName("active-image")[0]?.setAttribute("style", "--fade-duration:" + this.fadeDuration + 'ms;');
 
     this.currentIndex = 0;
-    
-    if(this.autoplay) {
+
+    if (this.autoplay) {
       this.changeImage();
     }
 
@@ -52,13 +52,20 @@ export class CarouselComponent implements OnInit {
   changeImage() {
     setTimeout(() => {
       if (this.goNext) {
-        this.currentIndex = this.currentIndex < this.images.length - 1 ? this.currentIndex + 1 : 0;
+
+        setTimeout(() => {
+          this.changeOfImage = true;
+          this.currentIndex = this.currentIndex < this.images.length - 1 ? this.currentIndex + 1 : 0;
+        }, 1000);
+        this.changeOfImage = false;
+
         if (this.currentIndex % Math.round(this.width / 160) == 0) {
           document.getElementsByClassName("other-images")[0].scrollBy(1024, 0);
           this.movedRight += 1;
         }
+
         if (this.currentIndex == 0) {
-          document.getElementsByClassName("other-images")[0].scrollBy(-(10 * 1024), 0);
+          document.getElementsByClassName("other-images")[0].scrollBy(-((this.movedRight + 10) * 1024), 0);
           this.movedRight = 0;
         }
       }

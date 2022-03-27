@@ -7,6 +7,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { LandingComponent } from './shared/landing/landing.component';
 import { TitleComponent } from './shared/title/title.component';
 import { CarouselComponent } from './shared/carousel/carousel.component';
+import { OfferCardComponent } from './shared/offer-card/offer-card.component';
+import { UserCardComponent } from './shared/user-card/user-card.component';
+import { ContactFormComponent } from './shared/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { CarouselComponent } from './shared/carousel/carousel.component';
     NavbarComponent,
     LandingComponent,
     TitleComponent,
-    CarouselComponent
+    CarouselComponent,
+    OfferCardComponent,
+    UserCardComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

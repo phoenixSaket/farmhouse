@@ -32,18 +32,18 @@
 .landing-headings-inner>.top-heading {
     font-family: 'Raleway', sans-serif;
     letter-spacing: 5px;
-    font-size: 3rem;
+    font-size: 3em;
     padding: 10px;
     border-bottom: 2px solid #4e4e4e;
     animation: fadeIn 3s ease-out forwards;
 }
 
 .landing-headings-inner>.bottom-heading {
-    padding: 10px;
+    padding: 10px 0;
     font-style: italic;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
-    font-size: 1rem;
+    font-size: 1em;
     animation: fadeIn 3s ease-out forwards;
 }
 

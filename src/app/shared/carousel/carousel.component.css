@@ -13,7 +13,7 @@
 .main-container {
     max-width: 1024px;
     width: calc(100vw - 20px);
-    min-width: 320px; 
+    min-width: 320px;
     margin-top: 15px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .inner-box {
-    width: 155px;
+    width: 145px;
 }
 
 .thumbnail {
@@ -46,6 +46,7 @@
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -71,4 +72,10 @@
 /* Handle on hover */
 .other-images::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .inner-box {
+        width: 80px;
+    }
 }

@@ -18,6 +18,7 @@ export class CarouselComponent implements OnInit {
   public goNext: boolean = true;
   private movedRight: number = 0;
   public changeOfImage: boolean = false;
+  private boxWidth: number = 160;
 
   constructor() { }
 
@@ -32,6 +33,11 @@ export class CarouselComponent implements OnInit {
     }
 
     this.width = this.width > 1024 ? 1024 : this.width;
+
+    if (this.width < 768) {
+      this.width -= 20;
+      this.boxWidth = 95;
+    }
   }
 
   setCurrentImage(index: number) {
@@ -59,13 +65,17 @@ export class CarouselComponent implements OnInit {
         }, 1000);
         this.changeOfImage = false;
 
-        if (this.currentIndex % Math.round(this.width / 160) == 0) {
-          document.getElementsByClassName("other-images")[0].scrollBy(1024, 0);
+        console.log(this.width / this.boxWidth);
+        console.log("CI", this.currentIndex);
+        console.log(this.width, " , ", this.boxWidth);
+
+        if ((this.currentIndex + 1) % Math.round(this.width / this.boxWidth) == 0) {
+          document.getElementsByClassName("other-images")[0].scrollBy(this.boxWidth == 105 ? this.width - 20 : this.width, 0);
           this.movedRight += 1;
         }
 
         if (this.currentIndex == 0) {
-          document.getElementsByClassName("other-images")[0].scrollBy(-((this.movedRight + 10) * 1024), 0);
+          document.getElementsByClassName("other-images")[0].scrollBy(-((this.movedRight + 10) * this.width), 0);
           this.movedRight = 0;
         }
       }

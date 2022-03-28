@@ -24,10 +24,23 @@
     font-weight: 700;
 }
 
+.link {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 15px;
+
+}
+
 .navbar-inner {
-    padding: 10px 20px;
+    padding: 0px 20px;
     position: fixed;
     max-width: 1440px;
     background: #fff;
     z-index: 10;
+}
+
+.active {
+    background-color: #ACCBEE;
 }

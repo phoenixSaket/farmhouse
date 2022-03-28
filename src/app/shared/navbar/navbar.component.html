@@ -4,8 +4,8 @@
             <a href="#">Viva Farms</a>
         </div>
         <div class="links-container d-flex">
-            <a class="link" *ngFor="let link of links"
-                [href]="'#'+(link.split(' ').join('_')).toLowerCase()">{{link}}</a>
+            <a class="link" *ngFor="let link of links" [ngClass]="link.isActive ? 'active' : ''"
+                [href]="'#'+(link.url.split(' ').join('_')).toLowerCase()">{{link.url}}</a>
         </div>
     </div>
 </div>

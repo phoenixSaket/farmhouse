@@ -7,14 +7,15 @@
 
 .inner-container {
     margin: 30px 0;
-    max-width: 1024px
+    max-width: 1024px;
+    width: 100%;
 }
 
 .offer-cards {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
+}   
 
 .cards-container {
     margin-top: 15px;

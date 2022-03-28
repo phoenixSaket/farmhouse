@@ -1,5 +1,7 @@
 <div class="app-container" id="#">
-    <app-navbar [links]=links></app-navbar>
+    <div class="w-100 d-flex align-center column" id="navbar">
+        <app-navbar [links]=links></app-navbar>
+    </div>
     <app-landing [text]="landing"></app-landing>
     <div class="w-100 d-flex align-center column inner-container" id="gallery">
         <app-title title="Gallery"></app-title>
@@ -24,7 +26,7 @@
         </div>
     </div>
 
-    <div class="contact-us" id="contact_us">
+    <div class="inner-container contact-us" id="contact_us">
         <app-title title="Contact Us"></app-title>
         <div class="d-flex w-100 justify-center">
             <div class="d-flex inner-container w-100 justify-center wrap cards-container">

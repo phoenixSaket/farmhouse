@@ -7,5 +7,17 @@
             <a class="link" *ngFor="let link of links" [ngClass]="link.isActive ? 'active' : ''"
                 [href]="'#'+(link.url.split(' ').join('_')).toLowerCase()">{{link.url}}</a>
         </div>
+        <div class="hamberger-container" (click)="showLinks = !showLinks">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+</div>
+
+<div class="hamberger-links-container" *ngIf="showLinks">
+    <div class="hamberger-links">
+        <a class="link" *ngFor="let link of links" [ngClass]="link.isActive ? 'active' : ''"
+            [href]="'#'+(link.url.split(' ').join('_')).toLowerCase()" (click)="hideAfterClick()">{{link.url}}</a>
     </div>
 </div>

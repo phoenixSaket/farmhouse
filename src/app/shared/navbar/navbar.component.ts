@@ -9,6 +9,7 @@ import { NavigationEnd, Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
 
   @Input() links: any[] = [];
+  public showLinks: boolean = false;
 
   constructor(private router: Router) { }
 
@@ -55,5 +56,13 @@ export class NavbarComponent implements OnInit {
       }
     })
   }
+
+  hideAfterClick() {
+    setTimeout(() => {
+
+      this.showLinks = false;
+    }, 200)
+  }
+
 
 }

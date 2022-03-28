@@ -1,6 +1,6 @@
-<div class="input-container d-flex column w-100">
-    <div class="label w-100 d-flex justify-start">{{label}}</div>
-    <input *ngIf="!isTextBox" class="input w-100 d-flex justify-center" [placeholder]="placeholder"
+<div class="input-container d-flex column">
+    <div class="label d-flex justify-start">{{label}}</div>
+    <input *ngIf="!isTextBox" class="input d-flex justify-center" [placeholder]="placeholder"
         (change)="valueChanged($event)" [value]="value">
     <textarea class="input w-100 d-flex justify-center" *ngIf="isTextBox" cols="30" rows="5"></textarea>
 </div>

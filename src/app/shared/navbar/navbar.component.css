@@ -44,3 +44,59 @@
 .active {
     background-color: #ACCBEE;
 }
+
+
+@media (min-width: 768px) {
+    .links-container {
+        display: flex;
+    }
+
+    .hamberger-container {
+        display: none;
+    }
+
+    .hamberger-links {
+        display: none;
+    }
+}
+
+@media (min-width: 240px) and (max-width: 767px) {
+    .links-container {
+        display: none;
+    }
+
+    .hamberger-container {
+        display: block;
+    }
+
+    .hamberger-links {
+        display: block;
+    }
+}
+
+.hamberger-container {
+    padding: 7px 30px;
+}
+
+.line {
+    width: 30px;
+    height: 4px;
+    background-color: #474747;
+    margin: 6px 0;
+}
+
+.hamberger-links {
+    position: absolute;
+    right: 15px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.hamberger-links-container {
+    top: 50px;
+    right: 0;
+    text-align: right;
+    position: fixed;
+    z-index: 100;
+    width: 150px;
+}

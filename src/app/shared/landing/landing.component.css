@@ -26,13 +26,12 @@
     font-weight: bold;
     text-shadow: 0 0 3px #969696;
     text-align: center;
-
 }
 
 .landing-headings-inner>.top-heading {
     font-family: 'Raleway', sans-serif;
     letter-spacing: 5px;
-    font-size: 3em;
+    font-size: xxx-large;
     padding: 10px;
     border-bottom: 2px solid #4e4e4e;
     animation: fadeIn 3s ease-out forwards;
@@ -43,7 +42,7 @@
     font-style: italic;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
-    font-size: 1em;
+    font-size: large;
     animation: fadeIn 3s ease-out forwards;
 }
 
@@ -113,3 +112,21 @@
 .landing-headings::after {
     bottom: -5rem;
 } */
+
+@media (min-width: 768px) {}
+
+@media (min-width: 240px) and (max-width: 767px) {
+    .landing-headings {
+        padding: 0 30px;
+        width: calc(100% - 60px);
+    }
+
+    .landing-headings-inner>.top-heading {
+        font-size: xx-large;
+    }
+
+
+    .landing-headings-inner>.bottom-heading {
+        font-size: small;
+    }
+}

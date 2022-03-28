@@ -1,6 +1,6 @@
 .label {
     font-weight: bold;
-    padding-left: 25px;
+    padding-left: 10px;
     font-family: "Cabin";
     text-transform: capitalize;
 }
@@ -12,6 +12,7 @@
     padding: 10px 10px;
     border-radius: 5px;
     font-family: "Cabin";
+    width: inherit;
 }
 
 ::placeholder {

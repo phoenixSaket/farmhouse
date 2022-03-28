@@ -65,10 +65,6 @@ export class CarouselComponent implements OnInit {
         }, 1000);
         this.changeOfImage = false;
 
-        console.log(this.width / this.boxWidth);
-        console.log("CI", this.currentIndex);
-        console.log(this.width, " , ", this.boxWidth);
-
         if ((this.currentIndex + 1) % Math.round(this.width / this.boxWidth) == 0) {
           document.getElementsByClassName("other-images")[0].scrollBy(this.boxWidth == 105 ? this.width - 20 : this.width, 0);
           this.movedRight += 1;

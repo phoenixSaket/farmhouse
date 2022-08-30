@@ -24,13 +24,16 @@
 a {
     font-family: 'Cabin', sans-serif;
     text-decoration: none;
+    color: unset;
+    
 }
 
-a:focus, a:hover, a:visited {
+a:focus, a:hover, a:visited , a:active{
     color: unset;
 }
 
 a:hover {
+    font-size: 140%;
     transform: scale(1.2);
     transition-duration: 100ms;
 }

@@ -12,7 +12,7 @@
 }
 
 .btn {
-    background-color: #dd5a51;
+    background-color: var(--accent-primary-dark);
     padding: 10px 75px;
     font-family: "Berseker";
     letter-spacing: 3px;

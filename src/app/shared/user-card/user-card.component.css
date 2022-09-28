@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     max-width: 300px;
+    min-width: 300px;
     box-shadow: 0 0 5px 1px gray;
     user-select: none;
     color: #474747;

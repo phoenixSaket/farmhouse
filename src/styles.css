@@ -18,7 +18,11 @@
     --text-color: #474747;
     --text-color-light: #636363;
     --accent-primary: #ADF5FF;
-    --accent-primary-dark: #0075A2;
+    /* --accent-primary-dark: #0075A2; */
+    /* --accent-primary-dark: #2b5039; */
+    /* --accent-primary-light: #d2fde1; */
+    --accent-primary-dark: #3e8f5d;
+    --accent-primary-light: #bbe5ca;
 }
 
 a {

@@ -26,14 +26,16 @@
     font-weight: bold;
     text-shadow: 0 0 3px #969696;
     text-align: center;
+    color: white;
 }
 
 .landing-headings-inner>.top-heading {
     font-family: 'Raleway', sans-serif;
     letter-spacing: 5px;
-    font-size: xxx-large;
+    font-size: 5rem;
     padding: 10px;
-    border-bottom: 2px solid #4e4e4e;
+    /* border-bottom: 2px solid #4e4e4e; */
+    border-bottom: 2px solid #f6f6f6;
     animation: fadeIn 3s ease-out forwards;
 }
 
@@ -68,7 +70,8 @@
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
-    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+    background-image: linear-gradient(to top, var(--accent-primary-dark) 0%, var(--accent-primary-light) 100%);
     overflow: hidden;
     z-index: -1;
 }

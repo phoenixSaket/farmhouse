@@ -6,8 +6,8 @@
         xmlns="http://www.w3.org/2000/svg">
         <defs>
             <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                <stop stop-color="#ACCBEE" offset="0%"></stop>
-                <stop stop-color="#E7F0FD" offset="100%"></stop>
+                <stop stop-color="#3e8f5d" offset="0%"></stop>
+                <stop stop-color="#d2fde1" offset="100%"></stop>
             </linearGradient>
             <linearGradient [id]="'sw-gradient-'+color" x1="0" x2="0" y1="1" y2="0">
                 <stop [attr.stop-color]="color" offset="0%"></stop>
@@ -26,8 +26,8 @@
 
     <div class="p-relative">
         <div class="text-container w-100 column d-flex align-center" [style.top]="ownerDetails ? '-95px' : '-80px'">
-            <div class="name" [style.color]="setDynamicColors ? '#fff' : '#000'">{{name}}</div>
-            <div class="address" [style.color]="setDynamicColors ? '#fff' : '#000'">{{address}}</div>
+            <div class="name">{{name}}</div>
+            <div class="address">{{address}}</div>
             <div class="owner-details d.flex column align-center text-center" *ngIf="ownerDetails">
                 <div class="email" [style.color]="setDynamicColors ? '#fff' : '#000'"><a
                         [href]="'mailto:'+ownerDetails.email">{{ownerDetails.email}}</a></div>

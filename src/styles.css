@@ -12,6 +12,7 @@
     margin: 0;
     /* font-family: 'Cabin', sans-serif; */
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -22,7 +23,8 @@
     /* --accent-primary-dark: #2b5039; */
     /* --accent-primary-light: #d2fde1; */
     --accent-primary-dark: #3e8f5d;
-    --accent-primary-light: #bbe5ca;
+    --accent-primary-light: #62b07e;
+    --accent-primary-lighter: #afddc0;
 }
 
 a {
@@ -177,4 +179,12 @@ body {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+}
+
+@media (min-width: 240px) and (max-width: 767px) {
+    a:hover {
+        font-size: 100%;
+        transform: scale(1);
+        transition-duration: 100ms;
+    }
 }

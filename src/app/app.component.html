@@ -38,10 +38,10 @@
         <app-title title="Contact Us"></app-title>
         <div class="d-flex w-100 justify-center">
             <div class="d-flex inner-container w-100 justify-center wrap contact-container">
-                <app-user-card [name]="ownerDetails.name" [address]="ownerDetails.address" [color]="ownerDetails.color"
+                <app-user-card class="width-set" [name]="ownerDetails.name" [address]="ownerDetails.address" [color]="ownerDetails.color"
                     [image]="ownerDetails.image" [content]="ownerDetails.content" [setDynamicColors]=true
                     [ownerDetails]="{email : ownerDetails.email, phone : ownerDetails.phone}"></app-user-card>
-                <app-contact-form></app-contact-form>
+                <app-contact-form class="width-set"></app-contact-form>
             </div>
         </div>
     </div>

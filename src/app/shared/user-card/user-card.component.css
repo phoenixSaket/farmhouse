@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     font-style: italic;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--text-color-light);
     font-family: 'Cabin';
     font-weight: 500;
@@ -68,7 +68,7 @@
 }
 
 .text-container {
-    position: absolute; 
+    position: absolute;
     top: -80px;
     color: white;
 }
@@ -89,4 +89,18 @@
     padding-top: 3px;
     border-top: 2px solid white;
     font-size: 0.7em;
+}
+
+.owner-card {
+    width: 100%;
+    min-width: unset;
+    max-width: unset;
+}
+
+@media (min-width: 240px) and (max-width: 767px) {
+    .owner-card {
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+    }
 }

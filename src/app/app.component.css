@@ -6,7 +6,7 @@
 }
 
 .inner-container {
-    margin: 30px 0;
+    margin: 50px 0 0;
     max-width: 1024px;
     width: 100%;
 }
@@ -31,13 +31,16 @@
 }
 
 .cards-outer {
-    width: calc(100% - 35px);
-    box-sizing: border-box;
+    width: 100%;
 }
 
 .contact-container {
     margin-top: 15px;
-    gap: 40px;
+    gap: 0 40px;
+}
+
+.width-set {
+    width: 46%;
 }
 
 @media (min-width: 240px) and (max-width: 767px) {
@@ -51,6 +54,12 @@
     }
 
     .cards-outer {
-        padding: 0 30px 0 0px;
+        padding: 0 20px;
     }
+
+    .width-set {
+        width: 100%;
+        margin: 20px;
+    }
+    
 }

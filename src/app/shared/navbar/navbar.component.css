@@ -1,11 +1,17 @@
+.navbar {
+    width: 100%;
+    max-width: 100vw;
+}
+
 .brand {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 700;
     padding-left: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-family: 'Raleway', sans-serif;
-    text-shadow: 0 0 2px #969696;
+    color: #f2f2f2;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
 }
 
 .brand:hover {
@@ -20,7 +26,8 @@
 }
 
 .link, .link:focus, .link:visited, .link:hover {
-    color: black;
+    color: white;
+    /* background-color: var(--accent-primary-lighter); */
     font-weight: 700;
 }
 
@@ -30,19 +37,22 @@
     justify-content: center;
     align-items: center;
     padding: 7px 15px;
-
+    
 }
 
 .navbar-inner {
-    padding: 0px 20px;
+    padding: 10px 0px;
     position: fixed;
     max-width: 1440px;
-    background: #fff;
+    background: var(--accent-primary-dark);
     z-index: 10;
+    max-width: 100vw;
 }
 
 .active {
-    background-color: #ACCBEE;
+    background-color: var(--accent-primary-light);
+    text-decoration: underline;
+    border-radius: 5px;
 }
 
 
@@ -72,6 +82,15 @@
     .hamberger-links {
         display: block;
     }
+
+    .brand:hover {
+        transform: scale(1);
+        transition-duration: 100ms;
+    }
+
+    .navbar-inner {
+        padding: 5px 0px;
+    }
 }
 
 .hamberger-container {
@@ -81,7 +100,8 @@
 .line {
     width: 30px;
     height: 4px;
-    background-color: #474747;
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
     margin: 6px 0;
 }
 
@@ -89,7 +109,7 @@
     position: absolute;
     right: 15px;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--accent-primary-dark);
 }
 
 .hamberger-links-container {

@@ -1,7 +1,7 @@
 .contact-form-container {
     width: 100%;
     max-width: 100%;
-    min-width: 680px;
+    /* min-width: 680px; */
     background-color: #fff;
     box-shadow: 0px 0px 5px 1px grey;
     height: 100%;

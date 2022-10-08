@@ -1,13 +1,16 @@
 .active {
-    width: inherit;
+    width: auto;
     max-width: inherit;
-    height: auto;
+    height: 80vh;
     border-radius: 5px;
     box-shadow: 0 0 5px 2px #969696;
 }
 
 .active-image {
     height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-container {
@@ -15,6 +18,9 @@
     width: calc(100vw - 20px);
     min-width: 320px;
     margin-top: 15px;
+    display: flex;
+    align-items: center;
+    /* height: 80vh; */
 }
 
 .other-images {
@@ -22,6 +28,7 @@
     gap: 15px;
     overflow-x: scroll;
     padding: 10px 5px;
+    width: 100%;
 }
 
 .inner-box {
@@ -30,7 +37,7 @@
 
 .thumbnail {
     width: inherit;
-    height: auto;
+    height: 100px;
     box-shadow: 0 0 5px 2px #969696;
 }
 
@@ -74,8 +81,41 @@
     background: #555;
 }
 
+.image {
+    width: auto;
+    height: 500px;
+    /* max-width: 248px; */
+}
+
+.check {
+    gap: 5px;
+    width: 100vw;
+    overflow-x: auto;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
     .inner-box {
         width: 80px;
     }
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

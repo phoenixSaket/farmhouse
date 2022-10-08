@@ -38,11 +38,12 @@
 .thumbnail {
     width: inherit;
     height: 100px;
-    box-shadow: 0 0 5px 2px #969696;
+    /* box-shadow: 0 0 5px 2px #969696; */
 }
 
 .active-thumbnail {
-    box-shadow: 0 0 5px 3px #f3f577;
+    box-shadow: 0 0 10px 2px grey;
+    /* outline: 5px solid grey; */
 }
 
 .fadeIn {
@@ -88,9 +89,42 @@
 }
 
 .check {
+    padding: 10px; 
     gap: 5px;
     width: 100vw;
     overflow-x: auto;
+}
+
+.fs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000000;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000db;
+    flex-direction: column;
+    color: white;
+}
+
+.inner-box-fs {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    overflow-x: auto;
+    background-color: #f1f1f1;
+}
+
+.img-fs {
+    height: 80%;
+    width: auto;
+    padding: 10px;
+}
+
+.thumb-container {
+    padding: 15px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -103,19 +137,19 @@
 ::-webkit-scrollbar {
     width: 2px;
     height: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #888;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
+}

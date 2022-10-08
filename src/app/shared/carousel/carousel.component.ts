@@ -19,6 +19,7 @@ export class CarouselComponent implements OnInit {
   private movedRight: number = 0;
   public changeOfImage: boolean = false;
   private boxWidth: number = 160;
+  public currentImg: string = "";
 
   constructor() { }
 
@@ -28,10 +29,6 @@ export class CarouselComponent implements OnInit {
 
     this.currentIndex = 0;
 
-    if (this.autoplay) {
-      this.changeImage();
-    }
-
     this.width = this.width > 1024 ? 1024 : this.width;
 
     if (this.width < 768) {
@@ -40,43 +37,14 @@ export class CarouselComponent implements OnInit {
     }
   }
 
-  setCurrentImage(index: number) {
-    this.currentIndex = index;
-    this.movedRight = Math.round(index / this.images.length);
+
+  openImage(src: string, i: number) {
+    this.currentImg= src;
+    this.currentIndex = i;
   }
 
-  public stopNext() {
-    if (this.shouldStopAtHover) {
-      this.goNext = false;
-    }
-  }
-
-  public startNext() {
-    this.goNext = true;
-  }
-
-  changeImage() {
-    setTimeout(() => {
-      if (this.goNext) {
-
-        setTimeout(() => {
-          this.changeOfImage = true;
-          this.currentIndex = this.currentIndex < this.images.length - 1 ? this.currentIndex + 1 : 0;
-        }, 1000);
-        this.changeOfImage = false;
-
-        if ((this.currentIndex + 1) % Math.round(this.width / this.boxWidth) == 0) {
-          document.getElementsByClassName("other-images")[0].scrollBy(this.boxWidth == 105 ? this.width - 20 : this.width, 0);
-          this.movedRight += 1;
-        }
-
-        if (this.currentIndex == 0) {
-          document.getElementsByClassName("other-images")[0].scrollBy(-((this.movedRight + 10) * this.width), 0);
-          this.movedRight = 0;
-        }
-      }
-      this.changeImage();
-    }, this.interval);
+  closeImage() {
+    this.currentImg = "";
   }
 
 }

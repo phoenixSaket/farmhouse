@@ -103,4 +103,9 @@
         min-width: unset;
         max-width: unset;
     }
+
+    .card:hover {
+        transform: scale(1);
+        transition-duration: 200ms;
+    }
 }

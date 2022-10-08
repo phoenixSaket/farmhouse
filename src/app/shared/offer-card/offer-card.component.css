@@ -87,3 +87,10 @@
     font-family: 'Cabin', sans-serif;
     letter-spacing: 1px;
 }
+
+@media (min-width: 240px) and (max-width: 767px) {
+    .card:hover {
+        transform: scale(1);
+        transition-duration: 200ms;
+    }    
+}

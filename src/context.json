@@ -35,7 +35,7 @@
             "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Viva/18.jpeg",
             "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Viva/19.jpeg",
             "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Viva/20.jpeg"
-            ]
+        ]
     },
     "offers": [
         {
@@ -85,5 +85,27 @@
         "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa.",
         "email": "vivafarm.444@gmail.com",
         "phone": "+91-9273176668"
-    }
+    },
+    "info": [
+        {
+            "name": "page-1",
+            "images": [],
+            "text": []
+        },
+        {
+            "name": "page-2",
+            "images": [],
+            "text": []
+        },
+        {
+            "name": "page-3",
+            "images": [],
+            "text": []
+        },
+        {
+            "name": "page-4",
+            "images": [],
+            "text": []
+        }
+    ]
 }

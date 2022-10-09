@@ -89,23 +89,58 @@
     "info": [
         {
             "name": "page-1",
-            "images": [],
-            "text": []
+            "images": [
+                "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/cooking.png",
+                "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/bed.png",
+                "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/pizza.png"
+            ],
+            "text": [
+                "2BHK Farm Villa / 6 Private Cottages",
+                "Indoor Kitchen for Villa",
+                "Restaurant for Cottages"
+            ]
         },
         {
             "name": "page-2",
-            "images": [],
-            "text": []
+            "images": [
+                "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/karaoke.png",
+                "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/chess.png",
+                "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/poker.png"
+            ],
+            "text": [
+                "Music System and Karaoke",
+                "Carrom, Chess, Badbinton, Card Games",
+                "Indoor and Outdoor Games"
+            ]
         },
         {
             "name": "page-3",
-            "images": [],
-            "text": []
+            "images": [
+                "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/shower.png",
+                "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/wifi.png",
+                "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/parking.png"
+            ],
+            "text": [
+                "24/7 Hot Water",
+                "Free Wifi",
+                "Car Parking",
+                "Invertor Backup",
+                "Spacious Lawn Area",
+                "Caretaker available"
+            ]
         },
         {
             "name": "page-4",
-            "images": [],
-            "text": []
+            "images": [
+                "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/map.png",
+                "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/mountain.png",
+                "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/temple.png"
+            ],
+            "text": [
+                "Nearby site-seeing spots",
+                "Mahuli Fort (9 km approx.)",
+                "Manas Mandir (6 km approx.)"
+            ]
         }
     ]
 }

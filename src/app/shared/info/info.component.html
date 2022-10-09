@@ -1,6 +1,14 @@
-<div class="info-conatiner">
-    <div class="current">
-        <div class="left"></div>
-        <div class="right"></div>
+<div class="info-container">
+    <div class="current w-100 d-flex" *ngFor="let page of data">
+        <div class="w-100 left d-flex column justify-center">
+            <div class="text" *ngFor="let text of page.text">
+                {{text}}
+            </div>
+        </div>
+        <div class="right">
+            <div class="img-container" [ngClass]="'img-'+(i+1)" *ngFor="let img of page.images; let i=index;">
+                <img class="image" [src]="img">
+            </div>
+        </div> 
     </div>
 </div>

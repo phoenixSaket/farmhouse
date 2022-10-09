@@ -5,9 +5,9 @@
     <app-landing [text]="landing"></app-landing>
     <div class="w-100 d-flex align-center column inner-container" id="welcome">
         <app-title title="Welcome"></app-title>
-        <app-info></app-info>
+        <app-info [data]="info"></app-info>
     </div>
-    <div class="w-100 d-flex align-center column inner-container" id="gallery">
+    <div class="w-100 inner-container" id="gallery">
         <app-title title="Gallery"></app-title>
         <app-carousel [images]="carousel.images" [autoplay]="carousel.autoplay"
             [shouldStopAtHover]="carousel.shouldStopAtHover" [interval]="carousel.interval">

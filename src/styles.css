@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 :root {
     --text-color: #474747;
     --text-color-light: #636363;

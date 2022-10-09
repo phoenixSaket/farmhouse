@@ -14,6 +14,7 @@ export class AppComponent {
   public offers: any[] = [];
   public feedbacks: any[] = [];
   public ownerDetails: any = {};
+  public info: any = [];
 
   ngOnInit() {
     let jsonData = JSON.parse(JSON.stringify(data));
@@ -23,5 +24,6 @@ export class AppComponent {
     this.offers = jsonData.default.offers;
     this.feedbacks = jsonData.default.feedbacks;
     this.ownerDetails = jsonData.default.ownerDetails;
+    this.info = jsonData.default.info;
   }
 }

@@ -15,8 +15,8 @@
 </div>
 
 <div class="fs" [ngStyle]="{'display' : currentImg != '' ? 'flex': 'none'}">
-    <img [src]="currentImg" id="img-fs" class="img-fs" [ngStyle]="{'z-index' : currentImg != '' ? 10000000: -1}" (click)="closeImage()">
     <div>Click on the Image to close the full screen mode</div>
+    <img [src]="currentImg" id="img-fs" class="img-fs" [ngStyle]="{'z-index' : currentImg != '' ? 10000000: -1}" (click)="closeImage()">
     <div class="inner-box-fs">
         <div class="thumb-container d-flex justify-content-center align-items-center" *ngFor="let img of images; let i = index" (click)="openImage(img, i)">
             <img class="thumbnail" [src]="img" [ngClass]="i == currentIndex ? 'active-thumbnail' : ''">

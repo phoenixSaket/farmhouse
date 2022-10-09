@@ -32,6 +32,7 @@ export class NavbarComponent implements OnInit {
 
   setActiveLink(url: string) {
     if (url.includes("gallery")) { this.setActive("gallery") }
+    else if (url.includes("welcome")) { this.setActive("welcome") }
     else if (url.includes("offers")) { this.setActive("offers") }
     else if (url.includes("feedbacks")) { this.setActive("feedbacks") }
     else if (url.includes("contact_us")) { this.setActive("contactUs") }
@@ -39,7 +40,7 @@ export class NavbarComponent implements OnInit {
   }
 
   setActive(active: string) {
-    let arrayString = ["gallery", "offers", "feedbacks", "contactUs"];
+    let arrayString = ["welcome", "gallery", "offers", "feedbacks", "contactUs"];
 
     if (active == "none") {
       this.links.forEach(link => {

@@ -11,6 +11,7 @@ import { OfferCardComponent } from './shared/offer-card/offer-card.component';
 import { UserCardComponent } from './shared/user-card/user-card.component';
 import { ContactFormComponent } from './shared/contact-form/contact-form.component';
 import { InputComponent } from './shared/input/input.component';
+import { InfoComponent } from './shared/info/info.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { InputComponent } from './shared/input/input.component';
     OfferCardComponent,
     UserCardComponent,
     ContactFormComponent,
-    InputComponent
+    InputComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,

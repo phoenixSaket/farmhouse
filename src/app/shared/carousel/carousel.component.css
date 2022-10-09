@@ -120,6 +120,7 @@
 .img-fs {
     height: 80%;
     width: auto;
+    max-width: 100vw;
     padding: 10px;
 }
 

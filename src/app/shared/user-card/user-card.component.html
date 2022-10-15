@@ -31,7 +31,7 @@
             <div class="owner-details d.flex column align-center text-center" *ngIf="ownerDetails">
                 <div class="email" [style.color]="setDynamicColors ? '#fff' : '#000'"><a
                         [href]="'mailto:'+ownerDetails.email">{{ownerDetails.email}}</a></div>
-                <div class="phone" [style.color]="setDynamicColors ? '#fff' : '#000'"><a [href]="'tel:'+ownerDetails.phone">{{ownerDetails.phone}}</a></div>
+                <div class="phone" [style.color]="setDynamicColors ? '#fff' : '#000'">{{ownerDetails.phone}}</div>
             </div>
         </div>
     </div>

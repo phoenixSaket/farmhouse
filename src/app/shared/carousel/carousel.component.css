@@ -118,7 +118,7 @@
 }
 
 .img-fs {
-    height: 80%;
+    height: 100%;
     width: auto;
     max-width: 100vw;
     padding: 10px;
@@ -131,6 +131,16 @@
 @media (min-width: 320px) and (max-width: 767px) {
     .inner-box {
         width: 80px;
+    }
+
+    .active {
+        max-width: calc(100% + 10px);
+        height: auto;
+        border-radius: 2px;
+    }
+
+    .other-images {
+        display: none;
     }
 }
 

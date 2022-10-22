@@ -79,6 +79,15 @@
     opacity: 0.8;
 }
 
+.reach-container {
+    margin: 20px 0 10px 0;
+    width: calc(100% - 40px);
+}
+
+.reach {
+    margin-bottom: 10px;
+}
+
 @media (min-width: 240px) and (max-width: 767px) {
     .cards-container {
         flex-wrap: nowrap;

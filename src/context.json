@@ -4,11 +4,12 @@
         "Gallery",
         "Offers",
         "Feedbacks",
-        "Contact Us"
+        "Contact Us",
+        "Around"
     ],
     "landing": {
         "top": "Welcome to Viva Farms",
-        "bottom": "YOur one stop location where the fun doesn't stop",
+        "bottom": "Your one stop location where the fun doesn't stop",
         "image": "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/sky.jpg"
     },
     "carousel": {
@@ -17,27 +18,29 @@
         "interval": 5000,
         "fadeDuration": 150,
         "images": [
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_2007-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_2011-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_2021-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_2025-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_2032-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_2043-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_2042-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_2028-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_2010-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_2009-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_1999-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_2015-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_1975-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_1968-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_1962-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_1960-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_1958-min.JPG",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_1971-min.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/1.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/2.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/3.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/4.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/5.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/6.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/7.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/8.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/9.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/10.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/11.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/12.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/13.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/14.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/15.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/16.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/17.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/18.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/19.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/20.JPG",
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images1/21.JPG",
             "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Viva/5.jpeg",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Viva/13.jpeg",
-            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Images/DSC_2018-min.JPG"
+            "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Viva/13.jpeg"
         ]
     },
     "offers": [
@@ -165,5 +168,11 @@
                 "Manas Mandir (6 km approx.)"
             ]
         }
+    ],
+    "reach": [
+        "<b>Viva Farms is easily accessible by all modes of transport.<b>",
+        "<i>&#x2022;&nbsp;&nbsp;&nbsp;10 minutes away from Mumbai Nashik highway.</i>",
+        "<i>&#x2022;&nbsp;&nbsp;&nbsp;The local market is at a distance of 1 km.</i>",
+        "<i>&#x2022;&nbsp;&nbsp;&nbsp;Distance from Asangoan Railway station is approximately 4.5 km</i>"
     ]
 }

@@ -36,11 +36,12 @@ export class NavbarComponent implements OnInit {
     else if (url.includes("offers")) { this.setActive("offers") }
     else if (url.includes("feedbacks")) { this.setActive("feedbacks") }
     else if (url.includes("contact_us")) { this.setActive("contactUs") }
+    else if (url.includes("around")) { this.setActive("around") }
     else { this.setActive("none") }
   }
 
   setActive(active: string) {
-    let arrayString = ["welcome", "gallery", "offers", "feedbacks", "contactUs"];
+    let arrayString = ["welcome", "gallery", "offers", "feedbacks", "contactUs", "around"];
 
     if (active == "none") {
       this.links.forEach(link => {

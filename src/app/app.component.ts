@@ -14,6 +14,7 @@ export class AppComponent {
   public offers: any[] = [];
   public feedbacks: any[] = [];
   public ownerDetails: any = {};
+  public reach: any[] = [];
   public info: any = [];
   public activeImage: any[] = [];
   public currentIndex: number = 0;
@@ -28,6 +29,7 @@ export class AppComponent {
     this.feedbacks = jsonData.default.feedbacks;
     this.ownerDetails = jsonData.default.ownerDetails;
     this.info = jsonData.default.info;
+    this.reach = jsonData.default.reach;
 
     for (let i = 0; i < 4; i++) {
       if (i == 0) {

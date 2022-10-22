@@ -29,7 +29,7 @@ export class CarouselComponent implements OnInit {
 
     this.currentIndex = 0;
 
-    if (this.autoplay) {
+    if (this.autoplay && window.screen.width > 800) {
       this.changeImage();
     }
 
@@ -42,7 +42,7 @@ export class CarouselComponent implements OnInit {
   }
 
   openImage(src: string, i: number) {
-    this.currentImg= src;
+    this.currentImg = src;
     this.currentIndex = i;
   }
 
@@ -88,4 +88,17 @@ export class CarouselComponent implements OnInit {
     }, this.interval);
   }
 
+  previous() {
+    this.currentIndex = this.currentIndex - 1;
+    if(this.currentIndex < 0) {
+      this.currentIndex = this.images.length - 1;
+    }
+  }
+
+  next() {
+    this.currentIndex = this.currentIndex + 1;
+    if(this.currentIndex >= this.images.length) {
+      this.currentIndex = 0;
+    }
+  }
 }

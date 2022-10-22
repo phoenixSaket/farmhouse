@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .main-container {
@@ -89,7 +90,7 @@
 }
 
 .check {
-    padding: 10px; 
+    padding: 10px;
     gap: 5px;
     width: 100vw;
     overflow-x: auto;
@@ -128,19 +129,36 @@
     padding: 15px;
 }
 
+.active-image>button {
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    background-color: transparent;
+    height: 80vh;
+    color: var(--accent-primary-dark)
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
     .inner-box {
         width: 80px;
     }
 
     .active {
-        max-width: calc(100% + 10px);
+        max-width: calc(100% - 75px);
         height: auto;
         border-radius: 2px;
     }
 
     .other-images {
         display: none;
+    }
+
+    .active-image {
+        height: 70vh;
     }
 }
 

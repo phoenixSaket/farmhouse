@@ -46,6 +46,13 @@
         </div>
     </div>
 
+    <div class="inner-container contact-us" id="around">
+        <app-title title="Getting Around & Transportation"></app-title>
+        <div class="reach-container d-flex w-100 column">
+            <div class="reach" *ngFor="let line of reach" [innerHTML]="line"></div>
+        </div>
+    </div>
+
     <div class="inner-container contact-us" id="contact_us">
         <app-title title="Contact Us"></app-title>
         <div class="d-flex w-100 justify-center">

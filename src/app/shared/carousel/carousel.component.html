@@ -1,14 +1,14 @@
 <div class="main-container w-100 d-flex  column">
-    <!-- <div class="active-image w-100">
+    <div class="active-image w-100">
         <img class="active" [ngClass]="changeOfImage ? 'fadeIn': ''" [src]="images[currentIndex]" (mouseenter)="stopNext()" (mouseleave)="startNext()">
     </div>
     <div class="other-images d-flex">
         <div class="inner-box" *ngFor="let img of images; let i = index" (click)="setCurrentImage(i)">
             <img class="thumbnail" [src]="img" [ngClass]="i == currentIndex ? 'active-thumbnail' : ''">
         </div>
-    </div> -->
+    </div>
 </div>
-<div class="check d-flex">
+<!-- <div class="check d-flex">
     <div class="check-inner d-flex" *ngFor="let img of images; let i = index;">
         <img class="image" [src]="img" (click)="openImage(img, i)" />
     </div>
@@ -22,4 +22,4 @@
             <img class="thumbnail" [src]="img" [ngClass]="i == currentIndex ? 'active-thumbnail' : ''">
         </div>
     </div>
-</div>
+</div> -->

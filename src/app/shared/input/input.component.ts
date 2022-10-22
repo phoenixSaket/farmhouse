@@ -19,7 +19,7 @@ export class InputComponent implements OnInit {
   }
 
   valueChanged(event: any) {
-    console.log("Input value", event.target.any);
+    console.log("Input value", event.target.value);
   }
 
 }

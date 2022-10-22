@@ -45,8 +45,8 @@
             "type": "Platinum",
             "content": [
                 "<b>Booking for whole Villa</b>",
-                "Upto 10 person",
-                "₹1499 for extra person",
+                "Upto 10 people",
+                "₹1499 for an extra person",
                 "Food included"
             ],
             "price": "₹14999"
@@ -54,9 +54,9 @@
         {
             "type": "Gold",
             "content": [
-                "<b>2 Dormatory/ Living rooms<b>",
-                "Upto 10 person",
-                "₹999 for extra person",
+                "<b>2 Dormatory / Living rooms<b>",
+                "Upto 10 people",
+                "₹999 for an extra person",
                 "Food included"
             ],
             "price": "₹9999"
@@ -101,7 +101,7 @@
         "address": "Founder, Owner",
         "color": "#3e8f5d",
         "image": "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Avatars/avatar-4.png",
-        "content": "Our absolute priority is to satisfy the client and their health and well-being. I hope we cater to all the wishes and make your stay as enjoyable and conformateble as possible. Please vist and give us a chance to help you explaore Viva Farms and all the fun along with it. For other queries and bookings please contact on the details below or send a message using the website.",
+        "content": "Our absolute priority is to satisfy the client and their health & well-being. I hope we cater to all the wishes and make your stay as enjoyable and conformateble as possible. Please vist and give us a chance to help you explaore Viva Farms and all the fun along with it. For other queries and bookings please contact on the details below or send a message using the website.",
         "email": "vivafarm.444@gmail.com",
         "phone": [
             "+91-9273176668",
@@ -117,7 +117,8 @@
                 "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/pizza.png"
             ],
             "text": [
-                "2BHK Farm Villa / 6 Private Cottages",
+                "2BHK Farm Villa",
+                "6 Private Cottages",
                 "Indoor Kitchen for Villa",
                 "Restaurant for Cottages"
             ]

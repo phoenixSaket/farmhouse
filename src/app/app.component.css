@@ -43,6 +43,41 @@
     width: 46%;
 }
 
+.car-container {
+    display: flex;
+    align-items: center;
+}
+
+.left-arrow,
+.right-arrow {
+    width: 50px;
+    cursor: pointer;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.chip {
+    width: 20px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #000000;
+    opacity: 0.1;
+    user-select: none;
+}
+
+.chip-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.active {
+    opacity: 0.8;
+}
+
 @media (min-width: 240px) and (max-width: 767px) {
     .cards-container {
         flex-wrap: nowrap;
@@ -62,4 +97,7 @@
         margin: 20px;
     }
     
+    .car-container {
+        width: 100%;
+    }
 }

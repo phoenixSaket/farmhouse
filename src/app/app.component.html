@@ -5,9 +5,17 @@
     <app-landing [text]="landing"></app-landing>
     <div class="w-100 d-flex align-center column inner-container" id="welcome">
         <app-title title="Welcome"></app-title>
-        <app-info [data]="info"></app-info>
+        <div class="car-container">
+            <!-- <div class="left-arrow" (click)="goLeft()">
+                < </div> -->
+            <app-info [data]="info"></app-info>
+            <!-- <div class="right-arrow" (click)="goRight()"> > </div> -->
+        </div>
+        <div class="chip-container">
+            <div class="chip" *ngFor="let img of activeImage; let i = index;" [ngClass]="img ? 'active':''"></div>
+        </div>
     </div>
-    <div class="w-100 inner-container" id="gallery">
+    <div class="w-100 d-flex align-center column inner-container" id="gallery">
         <app-title title="Gallery"></app-title>
         <app-carousel [images]="carousel.images" [autoplay]="carousel.autoplay"
             [shouldStopAtHover]="carousel.shouldStopAtHover" [interval]="carousel.interval">
@@ -42,13 +50,12 @@
         <app-title title="Contact Us"></app-title>
         <div class="d-flex w-100 justify-center">
             <div class="d-flex inner-container w-100 justify-center wrap contact-container">
-                <app-user-card class="width-set" [name]="ownerDetails.name" [address]="ownerDetails.address" [color]="ownerDetails.color"
-                    [image]="ownerDetails.image" [content]="ownerDetails.content" [setDynamicColors]=true
-                    [ownerDetails]="{email : ownerDetails.email, phone : ownerDetails.phone}"></app-user-card>
+                <app-user-card class="width-set" [name]="ownerDetails.name" [address]="ownerDetails.address"
+                    [color]="ownerDetails.color" [image]="ownerDetails.image" [content]="ownerDetails.content"
+                    [setDynamicColors]=true [ownerDetails]="{email : ownerDetails.email, phone : ownerDetails.phone}">
+                </app-user-card>
                 <app-contact-form class="width-set"></app-contact-form>
             </div>
         </div>
     </div>
-
-
 </div>

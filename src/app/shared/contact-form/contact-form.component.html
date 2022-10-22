@@ -10,8 +10,10 @@
             <app-input label="Phone Number" placeholder="8888888888" (change)="textInput('phone', $event)"></app-input>
         </div>
         <div class="input-wrapper w-75">
-            <app-input label="Message" placeholder="" [isTextBox]=true (change)="textInput('message', $event)"></app-input>
+            <app-input label="Message" placeholder="" [isTextBox]=true (change)="textInput('message', $event)">
+            </app-input>
         </div>
-        <button class="btn" (click)="sendMail()">Submit</button>
+        <button class="btn" (click)="isMailSent ? 'javascript:void(0)' : sendMail()">{{isSendingMail ? 'Sending Mail' : isMailSent ? 'Sent Mail': 'Send
+            Mail'}}</button>
     </div>
 </div>

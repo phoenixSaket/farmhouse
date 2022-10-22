@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class OfferCardComponent implements OnInit {
 
   @Input() type: string = "";
-  @Input() content: string = "";
+  @Input() content: string[] = [];
   @Input() price: string = "";
 
   constructor() { }

@@ -6,10 +6,10 @@
         <div class="triangle-over"></div>
     </div>
     <div class="content">
-        {{content}}
+        <div *ngFor="let line of content" [innerHTML]="line"></div>
     </div>
     <div class="price">
-        <div class="price-inner">
+        <div class="price-inner" *ngIf="price != ''">
             {{price}}
         </div>
     </div>

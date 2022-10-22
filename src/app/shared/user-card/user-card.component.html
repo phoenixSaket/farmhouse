@@ -20,18 +20,18 @@
         </path>
     </svg>
 
-    <div class="image-container">
+    <div class="image-container" [style.top]="ownerDetails ? '-220px' : '-180px'">
         <img [src]="image" class="avatar" alt="avatar">
     </div>
 
     <div class="p-relative">
-        <div class="text-container w-100 column d-flex align-center" [style.top]="ownerDetails ? '-95px' : '-80px'">
+        <div class="text-container w-100 column d-flex align-center" [style.top]="ownerDetails ? '-130px' : '-80px'">
             <div class="name">{{name}}</div>
             <div class="address">{{address}}</div>
             <div class="owner-details d.flex column align-center text-center" *ngIf="ownerDetails">
                 <div class="email" [style.color]="setDynamicColors ? '#fff' : '#000'"><a
                         [href]="'mailto:'+ownerDetails.email">{{ownerDetails.email}}</a></div>
-                <div class="phone" [style.color]="setDynamicColors ? '#fff' : '#000'">{{ownerDetails.phone}}</div>
+                <div class="phone" *ngFor="let phone of ownerDetails.phone" [style.color]="setDynamicColors ? '#fff' : '#000'">{{phone}}</div>
             </div>
         </div>
     </div>

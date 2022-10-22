@@ -43,18 +43,34 @@
     "offers": [
         {
             "type": "Platinum",
-            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa.",
-            "price": "₹5000"
+            "content": [
+                "<b>Booking for whole Villa</b>",
+                "Upto 10 person",
+                "₹1499 for extra person",
+                "Food included"
+            ],
+            "price": "₹14999"
         },
         {
             "type": "Gold",
-            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa.",
-            "price": "₹3000"
+            "content": [
+                "<b>2 Dormatory/ Living rooms<b>",
+                "Upto 10 person",
+                "₹999 for extra person",
+                "Food included"
+            ],
+            "price": "₹9999"
         },
         {
             "type": "Silver",
-            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa.",
-            "price": "₹2000"
+            "content": [
+                "<b>AC Room</b> : ₹4999",
+                "<b>Non AC Room</b> : ₹3999",
+                "<b>Children :</b>",
+                "- above 12 years : ₹1499",
+                "- between 5 to 12 years : ₹999"
+            ],
+            "price": ""
         }
     ],
     "feedbacks": [
@@ -63,21 +79,21 @@
             "address": "Mumbai, Maharshtra",
             "color": "#10AC84",
             "image": "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Avatars/avatar-1.png",
-            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa."
+            "content": "Brilliant place to visit with family. Amazing view. Much Recommended."
         },
         {
             "name": "Manish Khapre",
             "address": "Pune, Maharshtra",
             "color": "#629BC6",
             "image": "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Avatars/avatar-2.png",
-            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa."
+            "content": "Nice offers for villa. Enjoyed a lot with my friends. Thank you Viva Farms !"
         },
         {
             "name": "Yashashree Panda",
             "address": "Anand, Gujarat",
             "color": "#8A60B9",
             "image": "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Avatars/avatar-3.png",
-            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa."
+            "content": "5 star ratings from me! Visited with my family. No regrets. Cheers !"
         }
     ],
     "ownerDetails": {
@@ -85,9 +101,12 @@
         "address": "Founder, Owner",
         "color": "#3e8f5d",
         "image": "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/Avatars/avatar-4.png",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi ipsum dolorum ipsa eligendi eos earum quas quam, ullam, id laboriosam modi ex hic aliquam enim possimus distinctio culpa.",
+        "content": "Our absolute priority is to satisfy the client and their health and well-being. I hope we cater to all the wishes and make your stay as enjoyable and conformateble as possible. Please vist and give us a chance to help you explaore Viva Farms and all the fun along with it. For other queries and bookings please contact on the details below or send a message using the website.",
         "email": "vivafarm.444@gmail.com",
-        "phone": "+91-9273176668, +91-9049367698"
+        "phone": [
+            "+91-9273176668",
+            "+91-9049367698"
+        ]
     },
     "info": [
         {

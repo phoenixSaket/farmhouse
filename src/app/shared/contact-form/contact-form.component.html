@@ -1,19 +1,20 @@
 <div class="contact-form-container d-flex column align-center justify-center">
     <div class="contact-inner w-100 d-flex column align-center justify-center">
-        <div class="input-wrapper w-75">
-            <app-input label="Name" placeholder="John Doe" (change)="textInput('name', $event)"></app-input>
+        <div class="input-wrapper w-75" [ngClass]="errors.name ? 'error': ''">
+            <app-input label="Name" placeholder="Your Name" (change)="textInput('name', $event)"></app-input>
         </div>
-        <div class="input-wrapper w-75">
+        <div class="input-wrapper w-75" [ngClass]="errors.email ? 'error': ''">
             <app-input label="Email" placeholder="name@mail.com" (change)="textInput('email', $event)"></app-input>
         </div>
-        <div class="input-wrapper w-75">
+        <div class="input-wrapper w-75" [ngClass]="errors.phone ? 'error': ''">
             <app-input label="Phone Number" placeholder="8888888888" (change)="textInput('phone', $event)"></app-input>
         </div>
-        <div class="input-wrapper w-75">
+        <div class="input-wrapper w-75" [ngClass]="errors.message ? 'error': ''">
             <app-input label="Message" placeholder="" [isTextBox]=true (change)="textInput('message', $event)">
             </app-input>
         </div>
-        <button class="btn" (click)="isMailSent ? 'javascript:void(0)' : sendMail()">{{isSendingMail ? 'Sending Mail' : isMailSent ? 'Sent Mail': 'Send
+        <button class="btn" (click)="isMailSent ? 'javascript:void(0)' : sendMail()">{{isSendingMail ? 'Sending Mail' :
+            isMailSent ? 'Sent Mail': 'Send
             Mail'}}</button>
     </div>
 </div>

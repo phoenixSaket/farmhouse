@@ -31,6 +31,10 @@ body {
     --accent-primary-lighter: #afddc0;
 }
 
+.error  .input {
+    outline: 2px solid tomato !important;
+}
+
 a {
     font-family: 'Cabin', sans-serif;
     text-decoration: none;

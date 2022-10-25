@@ -14,9 +14,9 @@ export class OfferCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      document.getElementById(this.type.toLowerCase())?.setAttribute("style", "--color: var(--" + this.type.toLowerCase() + ");");
-    }, 10)
+    // setTimeout(() => {
+    //   document.getElementById(this.type.toLowerCase())?.setAttribute("style", "--color: var(--" + this.type.toLowerCase() + ");");
+    // }, 10)
   }
 
 }

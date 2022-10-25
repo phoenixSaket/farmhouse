@@ -45,9 +45,10 @@
     },
     "offers": [
         {
-            "type": "Platinum",
+            "type": "Villa",
             "content": [
                 "<b>Booking for whole Villa</b>",
+                "<b>2 AC Rooms</b>",
                 "Upto 10 people",
                 "₹1499 for an extra person",
                 "Food included"
@@ -55,7 +56,7 @@
             "price": "₹14999"
         },
         {
-            "type": "Gold",
+            "type": "Villa",
             "content": [
                 "<b>2 Dormatory / Living rooms<b>",
                 "Upto 10 people",
@@ -65,7 +66,7 @@
             "price": "₹9999"
         },
         {
-            "type": "Silver",
+            "type": "Cottages",
             "content": [
                 "<b>AC Room</b> : ₹4999",
                 "<b>Non AC Room</b> : ₹3999",

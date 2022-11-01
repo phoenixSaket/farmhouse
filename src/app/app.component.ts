@@ -18,6 +18,7 @@ export class AppComponent {
   public info: any = [];
   public activeImage: any[] = [];
   public currentIndex: number = 0;
+  public policy: string[] = []; 
   private width: number = 0;
 
   ngOnInit() {
@@ -30,6 +31,7 @@ export class AppComponent {
     this.ownerDetails = jsonData.default.ownerDetails;
     this.info = jsonData.default.info;
     this.reach = jsonData.default.reach;
+    this.policy = jsonData.default.policy;
 
     for (let i = 0; i < 4; i++) {
       if (i == 0) {

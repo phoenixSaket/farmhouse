@@ -175,5 +175,10 @@
         "<i>&#x2022;&nbsp;&nbsp;&nbsp;10 minutes away from Mumbai Nashik highway.</i>",
         "<i>&#x2022;&nbsp;&nbsp;&nbsp;The local market is at a distance of 1 km.</i>",
         "<i>&#x2022;&nbsp;&nbsp;&nbsp;Distance from Asangoan Railway station is approximately 4.5 km</i>"
+    ],
+    "policy": [
+        "<i>&#x2022;&nbsp;&nbsp;&nbsp;The advance payment must be made for your booking to be confirmed.</i>",
+        "<i>&#x2022;&nbsp;&nbsp;&nbsp;All guests must be able to share valid id proofs. This could be at the time of booking & also upon arrival.</i>",
+        "<i>&#x2022;&nbsp;&nbsp;&nbsp;Any damage to the property caused by the guest will be charged as per the actual cost of repair or replacement.</i>"
     ]
 }

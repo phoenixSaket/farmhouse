@@ -74,14 +74,14 @@ export class ContactFormComponent implements OnInit {
         'template_cobyj79',
         templateParams,
         'BpZ2Og7ymuit3VWlW'
-      ).then((response) => {
+      ).then((response:any) => {
         console.log("response", response);
         if (response.status == 200) {
           this.isSendingMail = false;
           this.isMailSent = true;
           this.isSendingTried = true;
         }
-      }, (error) => {
+      }, (error:any) => {
         console.log("Email Error in service", error);
         this.isSendingTried = true;
         this.isSendingMail = false;

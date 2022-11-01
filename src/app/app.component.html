@@ -65,4 +65,11 @@
             </div>
         </div>
     </div>
+
+    <div class="inner-container contact-us" id="T&C">
+        <app-title title="Terms & Conditions"></app-title>
+        <div class="reach-container d-flex w-100 column">
+            <div class="reach" *ngFor="let line of policy" [innerHTML]="line"></div>
+        </div>
+    </div>
 </div>

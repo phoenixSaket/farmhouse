@@ -108,6 +108,11 @@
 .social-img {
     width: 30px;
     height: 30px;
+    /* border-radius: 50%; */
+    position: relative;
+    bottom: 5px;
+    filter: brightness(100);
+    /* box-shadow: 2px 2px 4px black; */
 }
 
 @media (min-width: 240px) and (max-width: 767px) {

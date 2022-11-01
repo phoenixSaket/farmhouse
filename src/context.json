@@ -116,11 +116,11 @@
         "social": {
             "insta": {
                 "link": "https://www.instagram.com/vivafarm.444",
-                "image": "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/facebook.jpg"
+                "image": "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/facebook.png"
             },
             "fb": {
                 "link": "https://www.facebook.com/profile.php?id=100086975604947",
-                "image": "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/instagram.jpg"
+                "image": "https://raw.githubusercontent.com/phoenixSaket/farmhouse/master/src/assets/viva-info/instagram.png"
             }
         }
     },
@@ -149,7 +149,8 @@
             "text": [
                 "Music System and Karaoke",
                 "Carrom, Chess, Badbinton, Card Games",
-                "Indoor and Outdoor Games"
+                "Indoor and Outdoor Games",
+                "Jacuzzi Available"
             ]
         },
         {

@@ -18,6 +18,7 @@ export class UserCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.ownerDetails)
     if (this.setDynamicColors) {
       setTimeout(() => {
         document.getElementById("color-" + this.color)?.setAttribute("style", "--color : " + this.color + ";");
@@ -26,4 +27,7 @@ export class UserCardComponent implements OnInit {
 
   }
 
+  openSocial(link: string) {
+    window.open(link, "_blank");
+  }
 }

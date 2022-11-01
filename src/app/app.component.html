@@ -59,7 +59,7 @@
             <div class="d-flex inner-container w-100 justify-center wrap contact-container">
                 <app-user-card class="width-set" [name]="ownerDetails.name" [address]="ownerDetails.address"
                     [color]="ownerDetails.color" [image]="ownerDetails.image" [content]="ownerDetails.content"
-                    [setDynamicColors]=true [ownerDetails]="{email : ownerDetails.email, phone : ownerDetails.phone}">
+                    [setDynamicColors]=true [ownerDetails]="{email : ownerDetails.email, phone : ownerDetails.phone , insta : ownerDetails.social.insta, facebook : ownerDetails.social.fb}">
                 </app-user-card>
                 <app-contact-form class="width-set"></app-contact-form>
             </div>

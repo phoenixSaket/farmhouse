@@ -33,8 +33,12 @@
                         [href]="'mailto:'+ownerDetails.email">{{ownerDetails.email}}</a></div>
                 <div class="phone" *ngFor="let phone of ownerDetails.phone" [style.color]="setDynamicColors ? '#fff' : '#000'"><a [href]="'tel:' + phone">{{phone}}</a></div>
                 <div class="social">
-                    <div class="social-inner"></div>
-                    <div class="social-inner"></div>
+                    <div class="social-inner" (click)="openSocial(ownerDetails.insta.link)">
+                        <img class="social-img" alt="instagram" [src]="ownerDetails.insta.image">
+                    </div>
+                    <div class="social-inner" (click)="openSocial(ownerDetails.facebook.link)">
+                        <img class="social-img" alt="facebook" [src]="ownerDetails.facebook.image">
+                    </div>
                 </div>
             </div>
         </div>

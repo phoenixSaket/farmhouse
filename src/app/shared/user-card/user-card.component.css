@@ -97,6 +97,19 @@
     max-width: unset;
 }
 
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    right: 5px;
+}
+
+.social-img {
+    width: 30px;
+    height: 30px;
+}
+
 @media (min-width: 240px) and (max-width: 767px) {
     .owner-card {
         width: 100%;

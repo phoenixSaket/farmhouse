@@ -37,11 +37,12 @@ export class NavbarComponent implements OnInit {
     else if (url.includes("feedbacks")) { this.setActive("feedbacks") }
     else if (url.includes("contact_us")) { this.setActive("contactUs") }
     else if (url.includes("around")) { this.setActive("around") }
+    else if (url.includes("t&c")) { this.setActive("T&C") }
     else { this.setActive("none") }
   }
 
   setActive(active: string) {
-    let arrayString = ["welcome", "gallery", "offers", "feedbacks", "contactUs", "around"];
+    let arrayString = ["welcome", "gallery", "offers", "feedbacks", "contactUs", "around", "T&C"];
 
     if (active == "none") {
       this.links.forEach(link => {
@@ -61,7 +62,6 @@ export class NavbarComponent implements OnInit {
 
   hideAfterClick() {
     setTimeout(() => {
-
       this.showLinks = false;
     }, 200)
   }
